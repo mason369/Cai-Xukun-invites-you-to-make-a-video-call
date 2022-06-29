@@ -1,10 +1,6 @@
-$("#jplayer").jPlayer({
-    swfPath: "http://www.jplayer.org/latest/js/Jplayer.swf",    //播放器地址
-    ready: function () {
-        $(this).jPlayer("setMedia", {
-             mp3: "/audio/1call.mp3"   //背景音乐文件路径
-        });
-         $(this).jPlayer('play');
-     },
-     supplied: "mp3"
-  });
+window.onload = function () {
+//   const music = new Audio("1call.mp3");
+//   music.play();
+//   music.loop = true;
+alert('sdfasdf')
+};
