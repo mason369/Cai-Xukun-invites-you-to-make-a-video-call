@@ -15,8 +15,8 @@
     <title>蔡徐坤邀请你视频通话</title>
   </head>
   <body>
-    <audio src="/audio/1call.mp3"></audio>
-    <button id="cxk">caixukun</button>
+    <audio id="myaudio" src="/audio/1call.mp3" controls="controls" autoplay loop="true" hidden="none">
+    </audio>
     <div class="box">
       <div class="call">
         <img
@@ -46,12 +46,12 @@
 //   music.play();
 //   music.loop = true;
 // };
-  window.onload = function(){
-    var autplay = document.getElementById("cxk");
-    autplay.onclick = function(){
-      music.play();
-    }
-  }
+  // window.onload = function(){
+  //   var autplay = document.getElementById("cxk");
+  //   autplay.onclick = function(){
+  //     music.play();
+  //   }
+  // }
 
     </script>
   </body>
