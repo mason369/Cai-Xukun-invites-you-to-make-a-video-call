@@ -2,16 +2,36 @@
   margin: 0;
   padding: 0;
 }
-.background{
-    width: 500px;
-			height: 500px;
-			margin: 100px auto;
-			border: 1px solid #000;
-			background: url("/img/cxkcall.png") no-repeat;
+.background .backg{
+  width: 400px;
+ line-height: 790px;
+  margin: 0 auto;
+  border: 1px solid #000;
+  
+  /* 背景图片显示尺寸(放大/缩小背景图) */
+  background-size: 200px 200px; /* 通过像素设置 */
+  background-size: 50% 50%; /* 通过百分比设置 */
+  background-size: cover; /* 覆盖:图片成比例填满盒子。可用于适配 */
+  filter: blur(13px);
+	text-align: center;
+	display: block;
+}
 
-			/* 背景图片显示尺寸(放大/缩小背景图) */
-			background-size: 200px 200px;  /* 通过像素设置 */
-			background-size: 50% 50%;    /* 通过百分比设置 */
-			background-size: cover;      /* 覆盖:图片成比例填满盒子。可用于适配 */
-			background-size: contain;     /* 包含:图片成比例放大,可能不会填满盒子。可用于适配  */
+.background{
+	position: relative;
+	width: 400px;
+  margin: 0 auto;
+  /* 背景图片显示尺寸(放大/缩小背景图) */
+  background-size: 200px 200px; /* 通过像素设置 */
+  background-size: 50% 50%; /* 通过百分比设置 */
+  background-size: cover; /* 覆盖:图片成比例填满盒子。可用于适配 */
+}
+.headimg{
+	position: absolute;
+	top: 100px;
+	left: 175px;
+}
+.headimg{
+	width: 70px;
+	height: 70px;
 }
