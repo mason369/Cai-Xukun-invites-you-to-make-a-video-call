@@ -16,7 +16,7 @@ window.onload = function () {
         points[i].style.display='none';
         sleep(500);
         points[i].style.display='block';
-        if(i===2){
+        if(i===3){
             i=0;
         }
     }
