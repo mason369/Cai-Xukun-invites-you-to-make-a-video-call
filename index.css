@@ -23,7 +23,7 @@
   display: block;
   text-align: center;
   width: 400px;
-  height: 620px;
+  height: 680px;
   background-color: rgba(255, 255, 255);
   
 }
@@ -38,7 +38,7 @@
 }
 .headimg {
   position: absolute;
-  top: 40px;
+  top: 100px;
   left: 130px;
   z-index: 2;
 }
@@ -50,7 +50,7 @@
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: 200px;
+  top: 260px;
   z-index: 2;
   left: 165px;
 }
@@ -63,7 +63,7 @@
 }
 .bonten{
   position: absolute;
-  top: 480px;
+  top: 540px;
   display: flex;
   z-index: 2;
   
@@ -98,13 +98,13 @@ text-align: center;
   left: 0px;
   z-index: 1;
   width: 410px;
-  height: 620px;
+  height: 680px;
   background-color:rgba(0, 0, 0, 0.5)
 }
 .points{
   display: flex;
   position: absolute;
-  top: 139px;
+  top: 299px;
   left: 263px;
   color: #fff;
   font-size: 20px;
