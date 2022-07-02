@@ -4,7 +4,7 @@
 }
 .background .backg {
   width: 380px;
-  line-height: 650px;
+  line-height: 620px;
   margin: 0 auto;
   /* 背景图片显示尺寸(放大/缩小背景图) */
   background-size: 200px 200px; /* 通过像素设置 */
@@ -24,7 +24,7 @@
   display: block;
   text-align: center;
   width: 400px;
-  height: 770px;
+  height: 620px;
   background-color: rgba(255, 255, 255);
   
 }
@@ -39,7 +39,7 @@
 }
 .headimg {
   position: absolute;
-  top: 90px;
+  top: 80px;
   left: 130px;
   z-index: 2;
 }
@@ -51,7 +51,7 @@
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: 250px;
+  top: 100px;
   z-index: 2;
   left: 165px;
 }
@@ -64,7 +64,7 @@
 }
 .bonten{
   position: absolute;
-  top: 630px;
+  top: 480px;
   display: flex;
   z-index: 2;
   
@@ -99,13 +99,13 @@ text-align: center;
   left: 0px;
   z-index: 1;
   width: 410px;
-  height: 772px;
+  height: 622px;
   background-color:rgba(0, 0, 0, 0.5)
 }
 .points{
   display: flex;
   position: absolute;
-  top: 289px;
+  top: 139px;
   left: 263px;
   color: #fff;
   font-size: 20px;
