@@ -11,22 +11,22 @@ window.onload = function () {
     music.play();
     music.loop = true;
 
-    var points=document.getElementsByTagName('span');
-    for(var i=0;i<points.length;i++){
-        points[i].style.display='none';
-        sleep(500);
-        points[i].style.display='block';
-        if(i===3){
-            i=0;
-        }
-    }
-    function sleep(millisecond) {
-        return new Promise(resolve => {
-            setTimeout(() => {
-                resolve()
-            }, millisecond)
-        })
-    }
+    // var points=document.getElementsByTagName('span');
+    // for(var i=0;i<points.length;i++){
+    //     points[i].style.display='none';
+    //     sleep(500);
+    //     points[i].style.display='block';
+    //     if(i===3){
+    //         i=0;
+    //     }
+    // }
+    // function sleep(millisecond) {
+    //     return new Promise(resolve => {
+    //         setTimeout(() => {
+    //             resolve()
+    //         }, millisecond)
+    //     })
+    // }
 
 
 }

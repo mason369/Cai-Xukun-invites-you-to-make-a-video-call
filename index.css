@@ -4,7 +4,7 @@
 }
 .background .backg {
   width: 380px;
-  line-height: 770px;
+  line-height: 650px;
   margin: 0 auto;
   /* 背景图片显示尺寸(放大/缩小背景图) */
   background-size: 200px 200px; /* 通过像素设置 */
