@@ -25,7 +25,8 @@
   text-align: center;
   width: 400px;
   height: 770px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255);
+  
 }
 .background {
   position: relative;
@@ -40,6 +41,7 @@
   position: absolute;
   top: 90px;
   left: 130px;
+  z-index: 2;
 }
 .headimg {
   width: 160px;
@@ -50,6 +52,7 @@
   align-items: center;
   position: absolute;
   top: 250px;
+  z-index: 2;
   left: 165px;
 }
 .infor .cxk {
@@ -58,4 +61,51 @@
 }
 .infor .inviteyou {
   color: #fff;
+}
+.bonten{
+  position: absolute;
+  top: 630px;
+  display: flex;
+  z-index: 2;
+  
+}
+.jujue{
+  position: absolute;
+  left: 260px;
+  z-index: 2;
+}
+.jujue ,.jieting,a{
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+.jieting{
+  position: absolute;
+  left: 50px;
+  z-index: 2;
+}
+.imgcall{
+  width: 80px;
+}
+.reject,.anser{
+  padding: 85px 22px 0px;
+  
+}
+.blake{
+  position: absolute;
+  top: 0;
+  left: 164px;
+  z-index: 1;
+  width: 410px;
+  height: 772px;
+  background-color:rgba(0, 0, 0, 0.5)
+}
+.points{
+  display: flex;
+  position: absolute;
+  top: 289px;
+  left: 263px;
+  color: #fff;
+  font-size: 20px;
+  z-index: 2;
 }
