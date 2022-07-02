@@ -17,9 +17,9 @@
   top: 0;
   left: 8px;
 }
-/* .backgroundmain {
+.backgroundmain {
   background-color: rgba(0, 0, 0, 1);
-} */
+}
 .rgba {
   display: block;
   text-align: center;
@@ -92,9 +92,11 @@
   
 }
 .blake{
+display: block;
+text-align: center;
   position: absolute;
   top: 0;
-  left: 164px;
+  left: 0px;
   z-index: 1;
   width: 410px;
   height: 772px;

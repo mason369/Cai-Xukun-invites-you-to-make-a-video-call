@@ -12,8 +12,22 @@ window.onload = function () {
     music.loop = true;
 
     var points=document.getElementsByTagName('span');
-    for(var i=0;i<points;i++){
-        
+    for(var i=0;i<points.length;i++){
+        points[i].style.display='none';
+        sleep(500);
+        points[i].style.display='block';
+        if(i===2){
+            i=0;
+        }
     }
-       
-  };
+    function sleep(millisecond) {
+        return new Promise(resolve => {
+            setTimeout(() => {
+                resolve()
+            }, millisecond)
+        })
+    }
+
+
+}
+ 
