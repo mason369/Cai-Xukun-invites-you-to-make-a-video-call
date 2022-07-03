@@ -25,7 +25,6 @@
   width: 400px;
   height: 680px;
   background-color: rgba(255, 255, 255);
-  
 }
 .background {
   position: relative;
@@ -61,47 +60,48 @@
 .infor .inviteyou {
   color: #fff;
 }
-.bonten{
+.bonten {
   position: absolute;
   top: 540px;
   display: flex;
   z-index: 2;
-  
 }
-.jujue{
+.jujue {
   position: absolute;
   left: 260px;
   z-index: 2;
 }
-.jujue ,.jieting,a{
+.jujue,
+.jieting,
+a {
   color: #fff;
   text-align: center;
   text-decoration: none;
 }
-.jieting{
+.jieting {
   position: absolute;
   left: 50px;
   z-index: 2;
 }
-.imgcall{
+.imgcall {
   width: 80px;
 }
-.reject,.anser{
+.reject,
+.anser {
   padding: 85px 22px 0px;
-  
 }
-.blake{
-display: block;
-text-align: center;
+.blake {
+  display: block;
+  text-align: center;
   position: absolute;
   top: 0;
   left: 0px;
   z-index: 1;
   width: 410px;
   height: 680px;
-  background-color:rgba(0, 0, 0, 0.5)
+  background-color: rgba(0, 0, 0, 0.5);
 }
-.points{
+.points {
   display: flex;
   position: absolute;
   top: 299px;
