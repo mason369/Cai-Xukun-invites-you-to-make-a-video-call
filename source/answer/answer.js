@@ -4,5 +4,4 @@ window.onload = function () {
   );
   music.play();
   music.loop = true;
-
-}
+};
