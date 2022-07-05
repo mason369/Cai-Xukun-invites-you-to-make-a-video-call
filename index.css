@@ -2,8 +2,14 @@
   margin: 0;
   padding: 0;
 }
+html{
+  --width: ;
+  --height:680px ;
+  --positionTop:-15px;
+}
 .background .backg {
-  width: 300px;
+  width: 370px;
+  height: var(--height);
   margin: 0 auto;
   /* 背景图片显示尺寸(放大/缩小背景图) */
   background-size: 200px 200px; /* 通过像素设置 */
@@ -23,7 +29,7 @@
   display: block;
   text-align: center;
   width: 400px;
-  height: 680px;
+  height: var(--height);
   background-color: rgba(255, 255, 255);
 }
 .background {
@@ -70,6 +76,7 @@
   position: absolute;
   left: 260px;
   z-index: 2;
+  top: var(--positionTop);
 }
 .jujue,
 .jieting,
@@ -81,6 +88,7 @@ a {
 .jieting {
   position: absolute;
   left: 50px;
+  top: var(--positionTop);
   z-index: 2;
 }
 .imgcall {
@@ -98,7 +106,7 @@ a {
   left: 0px;
   z-index: 1;
   width: 410px;
-  height: 680px;
+  height: var(--height);
   background-color: rgba(0, 0, 0, 0.5);
 }
 .points {
