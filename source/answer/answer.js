@@ -1,11 +1,7 @@
 window.onload = function () {
-  function countSecond() {
-    const music = new Audio(
-      "https://mason369.github.io/Cai-Xukun-invites-you-to-make-a-video-call/audio/757104139_nb3-1-30216.mp3"
-    );
-    music.play();
-    music.loop = true;
-    
-  }
-  setTimeout("countSecond()", 500);
+  const music = new Audio(
+    "https://mason369.github.io/Cai-Xukun-invites-you-to-make-a-video-call/audio/757104139_nb3-1-30216.mp3"
+  );
+  music.play(setTimeout("countSecond()", 500));
+  music.loop = true;
 };
