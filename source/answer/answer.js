@@ -5,6 +5,7 @@ window.onload = function () {
     );
     music.play();
     music.loop = true;
-    setTimeout("countSecond()", 500);
+    
   }
+  setTimeout("countSecond()", 500);
 };
