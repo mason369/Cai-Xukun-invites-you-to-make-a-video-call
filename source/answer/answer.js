@@ -7,6 +7,6 @@ window.onload = function () {
     music.play();
     music.loop = true;
   }
-  setTimeout("test()","2000");
+  setTimeout(test(),"2000");
   
 };
