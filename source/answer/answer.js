@@ -5,5 +5,5 @@ window.onload = function () {
     );
     music.play();
     music.loop = true; // 延迟处理的事件
-  }, 2000);
+  }, 200);
 };
