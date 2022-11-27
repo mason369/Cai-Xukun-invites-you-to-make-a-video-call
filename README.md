@@ -11,7 +11,7 @@
 
 [Live Demo](https://mason369.github.io/Cai-Xukun-invites-you-to-make-a-video-call/index.html)
 
-代码正在优化中，预计两年半后完成
+代码正在优化中，预计时间两年半
 ---
 ## 相关仓库
 
