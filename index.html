@@ -130,8 +130,9 @@
                 font-size: 20px;
                 z-index: 2;
             }
-            .rejectGif{
-              display: none;
+            .rejectGif,
+            .anserGif {
+                display: none;
             }
         </style>
         <script src="./index.js"></script>
@@ -188,6 +189,13 @@
             alt=""
             class="rejectGif"
         />
+
+        <img
+            src="https://mason369.github.io/Cai-Xukun-invites-you-to-make-a-video-call/img/2.gif"
+            style="width: 50%; display: inline-block;"
+            alt=""
+            class="anserGif"
+        />
     </body>
     <script>
         // points实现一个接一个闪烁效果，通过改变透明度实现
@@ -206,5 +214,20 @@
                 });
             }
         }, 200);
+
+        // window.onload = function () {
+        //     const music = new Audio(
+        //         "https://mason369.github.io/Cai-Xukun-invites-you-to-make-a-video-call/audio/757104139_nb3-1-30216.mp3"
+        //     );
+        //     music.play(setTimeout("countSecond()", 1000));
+        //     music.loop = true;
+        // };
+        // window.onload = function () {
+        //     const music = new Audio(
+        //         "https://mason369.github.io/Cai-Xukun-invites-you-to-make-a-video-call//audio/无奈owo - [全损音质]鸡你太美.mp3"
+        //     );
+        //     music.play();
+        //     music.loop = true;
+        // };
     </script>
 </html>
