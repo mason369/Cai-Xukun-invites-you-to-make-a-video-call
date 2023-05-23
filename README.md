@@ -5,18 +5,19 @@
 [![](https://img.shields.io/crates/l/s)](https://img.shields.io/crates/l/s)
 
 纯属娱乐，蔡徐坤邀请你视频通话
-乐到你了的话别忘了右上角的star哦  
+乐到你了的话别忘了右上角的 star 哦
 
 <img src="https://mason369.github.io/Cai-Xukun-invites-you-to-make-a-video-call/img/wKgBOV4VsWyAB9cMAAtAhfXnV4g3012.gif">
 
 [Live Demo](https://mason369.github.io/Cai-Xukun-invites-you-to-make-a-video-call/index.html)
 
 ---
+
 ## 相关仓库
 
-- [E-commerce](https://github.com/Galaxy-Wish-Star/E-commerce) — 助农电商项目-Vue
-- [美香稻](https://github.com/Galaxy-Wish-Star/Rural-revitalization-agricultural-assistance-services) — 乡村振兴，助农服务前端开发项目
-- [Future Chater](https://github.com/School-of-Website-Engineering/future-front-end) — Vue3 + TypeScript + Vite + Element Plus + SCSS + Pinia，一个在线聊天室项目。
+-   [E-commerce](https://github.com/Galaxy-Wish-Star/E-commerce) — 助农电商项目-Vue
+-   [美香稻](https://github.com/Galaxy-Wish-Star/Rural-revitalization-agricultural-assistance-services) — 乡村振兴，助农服务前端开发项目
+-   [Future Chater](https://github.com/School-of-Website-Engineering/future-front-end) — Vue3 + TypeScript + Vite + Element Plus + SCSS + Pinia，一个在线聊天室项目。
 
 ## 维护者
 
@@ -28,7 +29,6 @@
 详情参照[CONTRIBUTING](CONTRIBUTING.md)
 
 Rural-revitalization-agricultural-assistance-services 遵循 [Code of conduct](./CODE_OF_CONDUCT.md) 行为规范。
-
 
 # 使用许可
 
