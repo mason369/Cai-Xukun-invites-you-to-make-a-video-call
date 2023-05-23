@@ -135,7 +135,6 @@
                 display: none;
             }
         </style>
-        <script src="./index.js"></script>
         <title>蔡徐坤邀请你打篮球</title>
     </head>
 
@@ -144,13 +143,17 @@
             <div class="background">
                 <div class="blake"></div>
                 <div class="rgba"></div>
-                <img class="backg" src="./img/background.jpg" alt="" />
+                <img
+                    class="backg"
+                    src="https://rust.coldmint.top/ftp/ling/mason/CXK-VIDEO/img/background.jpg"
+                    alt=""
+                />
                 <div class="callingbackground">
                     <div class="calling">
                         <div class="imgbackground">
                             <img
                                 class="headimg"
-                                src="./img/cxkcall.png"
+                                src="https://rust.coldmint.top/ftp/ling/mason/CXK-VIDEO/img/cxkcall.png"
                                 alt=""
                             />
                         </div>
@@ -168,36 +171,78 @@
                     </div>
                     <div class="bonten">
                         <div class="jujue">
-                            <img class="imgcall" src="./img/jujue.png" alt="" />
-                            <a class="reject" href="#">拒绝</a>
+                            <img
+                                class="imgcall"
+                                src="https://rust.coldmint.top/ftp/ling/mason/CXK-VIDEO/img/jujue.png"
+                                alt=""
+                            />
+                            <a class="reject" href="javascript:;">拒绝</a>
                         </div>
                         <div class="jieting">
                             <img
                                 class="imgcall"
-                                src="./img/jieting.png"
+                                src="https://rust.coldmint.top/ftp/ling/mason/CXK-VIDEO/img/jieting.png"
                                 alt=""
                             />
-                            <a class="anser" href="#">接听</a>
+                            <a class="anser" href="javascript:;">接听</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <img
-            style="width: 50%; display: inline-block;"
-            src="https://mason369.github.io/Cai-Xukun-invites-you-to-make-a-video-call/img/wKgBOV4VsWyAB9cMAAtAhfXnV4g3012.gif"
+            src="https://rust.coldmint.top/ftp/ling/mason/CXK-VIDEO/img/wKgBOV4VsWyAB9cMAAtAhfXnV4g3012.gif"
             alt=""
             class="rejectGif"
         />
 
         <img
-            src="https://mason369.github.io/Cai-Xukun-invites-you-to-make-a-video-call/img/2.gif"
-            style="width: 50%; display: inline-block;"
+            src="https://rust.coldmint.top/ftp/ling/mason/CXK-VIDEO/img/2.gif"
             alt=""
             class="anserGif"
         />
     </body>
     <script>
+        let audioInitialized = false;
+
+        function playMusic(res) {
+            // 如果audioInitialized已经为true，则表示音频已初始化，直接返回
+            if (audioInitialized) {
+                return;
+            }
+
+            const music = new Audio(res);
+
+            music.addEventListener("canplaythrough", () => {
+                // 只有当音频准备好时才播放
+                music.play();
+                music.loop = true;
+                // 标记音频已经初始化
+                // audioInitialized = true;
+            });
+        }
+
+        document.addEventListener(
+            "touchstart",
+            playMusic(
+                "https://rust.coldmint.top/ftp/ling/mason/CXK-VIDEO/audio/1call.mp3"
+            )
+        );
+
+        document.addEventListener(
+            "click",
+            playMusic(
+                "https://rust.coldmint.top/ftp/ling/mason/CXK-VIDEO/audio/1call.mp3"
+            )
+        );
+
+        document.addEventListener(
+            "mouseover",
+            playMusic(
+                "https://rust.coldmint.top/ftp/ling/mason/CXK-VIDEO/audio/1call.mp3"
+            )
+        );
+
         // points实现一个接一个闪烁效果，通过改变透明度实现
         let points = document.querySelectorAll(".point");
         let i = 0;
@@ -214,20 +259,32 @@
                 });
             }
         }, 200);
+        // 接听事件
+        function anser() {
+            // 将backgroundmain隐藏，anserGif显示
+            document.querySelector(".backgroundmain").style.display = "none";
+            document.querySelector(".anserGif").style.display = "block";
+            setTimeout(() => {
+                playMusic(
+                    "https://rust.coldmint.top/ftp/ling/mason/CXK-VIDEO/audio/757104139_nb3-1-30216.mp3"
+                );
+            }, 0);
+        }
+        // 接听
+        document.querySelector(".接听").addEventListener("click", anser);
 
-        // window.onload = function () {
-        //     const music = new Audio(
-        //         "https://mason369.github.io/Cai-Xukun-invites-you-to-make-a-video-call/audio/757104139_nb3-1-30216.mp3"
-        //     );
-        //     music.play(setTimeout("countSecond()", 1000));
-        //     music.loop = true;
-        // };
-        // window.onload = function () {
-        //     const music = new Audio(
-        //         "https://mason369.github.io/Cai-Xukun-invites-you-to-make-a-video-call//audio/无奈owo - [全损音质]鸡你太美.mp3"
-        //     );
-        //     music.play();
-        //     music.loop = true;
-        // };
+        function reject() {
+            // 将backgroundmain隐藏，rejectGif显示
+            document.querySelector(".backgroundmain").style.display = "none";
+            document.querySelector(".rejectGif").style.display = "block";
+
+            setTimeout(() => {
+                playMusic(
+                    "https://rust.coldmint.top/ftp/ling/mason/CXK-VIDEO/audio/无奈owo - [全损音质]鸡你太美.mp3"
+                );
+            }, 0);
+        }
+        // 拒绝
+        document.querySelector(".jujue").addEventListener("click", reject);
     </script>
 </html>
