@@ -16,6 +16,7 @@
 
 - [E-commerce](https://github.com/Galaxy-Wish-Star/E-commerce) — 助农电商项目-Vue
 - [美香稻](https://github.com/Galaxy-Wish-Star/Rural-revitalization-agricultural-assistance-services) — 乡村振兴，助农服务前端开发项目
+- [Future Chater](https://github.com/School-of-Website-Engineering/future-front-end) — Vue3 + TypeScript + Vite + Element Plus + SCSS + Pinia，一个在线聊天室项目。
 
 ## 维护者
 
