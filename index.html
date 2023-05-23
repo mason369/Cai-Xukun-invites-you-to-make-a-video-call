@@ -8,7 +8,8 @@
             name="viewport"
             content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
         />
-        <link rel="stylesheet" href="./all.css" />
+        <link rel="stylesheet" href="https://rust.coldmint.top/ftp/ling/mason/all.css
+        " />
         <style>
             * {
                 margin: 0;
@@ -259,8 +260,9 @@
                 });
             }
         }, 200);
-        // 接听事件
-        function anser() {
+        // 接听
+        document.querySelector(".jieting").addEventListener("click", function () {
+          console.log("接听");
             // 将backgroundmain隐藏，anserGif显示
             document.querySelector(".backgroundmain").style.display = "none";
             document.querySelector(".anserGif").style.display = "block";
@@ -269,11 +271,10 @@
                     "https://rust.coldmint.top/ftp/ling/mason/CXK-VIDEO/audio/757104139_nb3-1-30216.mp3"
                 );
             }, 0);
-        }
-        // 接听
-        document.querySelector(".接听").addEventListener("click", anser);
+        });
 
-        function reject() {
+        // 拒绝
+        document.querySelector(".jujue").addEventListener("click", function () {
             // 将backgroundmain隐藏，rejectGif显示
             document.querySelector(".backgroundmain").style.display = "none";
             document.querySelector(".rejectGif").style.display = "block";
@@ -283,8 +284,6 @@
                     "https://rust.coldmint.top/ftp/ling/mason/CXK-VIDEO/audio/无奈owo - [全损音质]鸡你太美.mp3"
                 );
             }, 0);
-        }
-        // 拒绝
-        document.querySelector(".jujue").addEventListener("click", reject);
+        });
     </script>
 </html>
