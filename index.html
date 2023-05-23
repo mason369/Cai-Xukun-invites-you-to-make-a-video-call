@@ -164,6 +164,7 @@
                         <span class="point">.</span>
                         <span class="point">.</span>
                         <span class="point">.</span>
+                        <span class="point">.</span>
                     </div>
                     <div class="bonten">
                         <div class="jujue">
@@ -195,4 +196,22 @@
             </div>
         </div>
     </body>
+    <script>
+        // points实现一个接一个闪烁效果，通过改变透明度实现
+        let points = document.querySelectorAll(".point");
+        let i = 0;
+        const maxI = points.length; // 动态获取点的数量
+
+        setInterval(() => {
+            points[i].style.opacity = 1;
+            i++;
+            if (i == maxI) {
+                // 判断计数器是否达到最大值
+                i = 0;
+                points.forEach((item) => {
+                    item.style.opacity = 0;
+                });
+            }
+        }, 200);
+    </script>
 </html>
