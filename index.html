@@ -130,6 +130,9 @@
                 font-size: 20px;
                 z-index: 2;
             }
+            .rejectGif{
+              display: none;
+            }
         </style>
         <script src="./index.js"></script>
         <title>蔡徐坤邀请你打篮球</title>
@@ -140,17 +143,13 @@
             <div class="background">
                 <div class="blake"></div>
                 <div class="rgba"></div>
-                <img
-                    class="backg"
-                    src="https://mason369.github.io/Cai-Xukun-invites-you-to-make-a-video-call/img/background.jpg"
-                    alt=""
-                />
+                <img class="backg" src="./img/background.jpg" alt="" />
                 <div class="callingbackground">
                     <div class="calling">
                         <div class="imgbackground">
                             <img
                                 class="headimg"
-                                src="https://mason369.github.io/Cai-Xukun-invites-you-to-make-a-video-call/img/cxkcall.png"
+                                src="./img/cxkcall.png"
                                 alt=""
                             />
                         </div>
@@ -168,33 +167,27 @@
                     </div>
                     <div class="bonten">
                         <div class="jujue">
-                            <img
-                                class="imgcall"
-                                src="https://mason369.github.io/Cai-Xukun-invites-you-to-make-a-video-call/img/jujue.png"
-                                alt=""
-                            />
-                            <a
-                                class="reject"
-                                href="#"
-                                >拒绝</a
-                            >
+                            <img class="imgcall" src="./img/jujue.png" alt="" />
+                            <a class="reject" href="#">拒绝</a>
                         </div>
                         <div class="jieting">
                             <img
                                 class="imgcall"
-                                src="https://mason369.github.io/Cai-Xukun-invites-you-to-make-a-video-call/img/jieting.png"
+                                src="./img/jieting.png"
                                 alt=""
                             />
-                            <a
-                                class="anser"
-                                href="#"
-                                >接听</a
-                            >
+                            <a class="anser" href="#">接听</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <img
+            style="width: 50%; display: inline-block;"
+            src="https://mason369.github.io/Cai-Xukun-invites-you-to-make-a-video-call/img/wKgBOV4VsWyAB9cMAAtAhfXnV4g3012.gif"
+            alt=""
+            class="rejectGif"
+        />
     </body>
     <script>
         // points实现一个接一个闪烁效果，通过改变透明度实现
