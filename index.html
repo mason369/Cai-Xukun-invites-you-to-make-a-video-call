@@ -1,62 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="viewport"
+            content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+        <link rel="stylesheet" href="./all.css" />
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            html {
+                --width: ;
+                --height: 100vh;
+                --positionTop: -20px;
+            }
+            .background .backg {
+                width: 370px;
+                height: var(--height);
+                margin: 0 auto;
+                /* 背景图片显示尺寸(放大/缩小背景图) */
+                background-size: 200px 200px; /* 通过像素设置 */
+                background-size: 50% 50%; /* 通过百分比设置 */
+                background-size: cover; /* 覆盖:图片成比例填满盒子。可用于适配 */
+                filter: blur(13px);
+                text-align: center;
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 8px;
+            }
+            .backgroundmain {
+                background-color: rgba(0, 0, 0, 1);
+            }
+            .rgba {
+                display: block;
+                text-align: center;
+                width: 400px;
+                height: var(--height);
+                background-color: rgba(255, 255, 255);
+            }
+            .background {
+                position: relative;
+                width: 400px;
+                margin: 0 auto;
+                /* 背景图片显示尺寸(放大/缩小背景图) */
+                background-size: 200px 200px; /* 通过像素设置 */
+                background-size: 50% 50%; /* 通过百分比设置 */
+                background-size: cover; /* 覆盖:图片成比例填满盒子。可用于适配 */
+            }
+            .headimg {
+                position: absolute;
+                top: 100px;
+                left: 130px;
+                z-index: 2;
+            }
+            .headimg {
+                width: 160px;
+            }
+            .infor {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: absolute;
+                top: 260px;
+                z-index: 2;
+                left: 165px;
+            }
+            .infor .cxk {
+                font-size: 32px;
+                color: #fff;
+            }
+            .infor .inviteyou {
+                color: #fff;
+            }
+            .bonten {
+                position: absolute;
+                top: 540px;
+                display: flex;
+                z-index: 2;
+            }
+            .jujue {
+                position: absolute;
+                left: 260px;
+                z-index: 2;
+                top: var(--positionTop);
+            }
+            .jujue,
+            .jieting,
+            a {
+                color: #fff;
+                text-align: center;
+                text-decoration: none;
+            }
+            .jieting {
+                position: absolute;
+                left: 50px;
+                top: var(--positionTop);
+                z-index: 2;
+            }
+            .imgcall {
+                width: 80px;
+            }
+            .reject,
+            .anser {
+                padding: 85px 22px 0px;
+            }
+            .blake {
+                display: block;
+                text-align: center;
+                position: absolute;
+                top: 0;
+                left: 0px;
+                z-index: 1;
+                width: 410px;
+                height: var(--height);
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+            .points {
+                display: flex;
+                position: absolute;
+                top: 299px;
+                left: 263px;
+                color: #fff;
+                font-size: 20px;
+                z-index: 2;
+            }
+        </style>
+        <script src="./index.js"></script>
+        <title>蔡徐坤邀请你打篮球</title>
+    </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="viewport"
-    content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <link rel="stylesheet" href="https://mason369.github.io/Cai-Xukun-invites-you-to-make-a-video-call/index.css" />
-  <link rel="stylesheet" href="https://mason369.github.io/Cai-Xukun-invites-you-to-make-a-video-call/all.css" />
-  <script src="https://mason369.github.io/Cai-Xukun-invites-you-to-make-a-video-call/index.js"></script>
-  <title>蔡徐坤邀请你打篮球</title>
-</head>
+    <body>
+        <div class="backgroundmain">
+            <div class="background">
+                <div class="blake"></div>
+                <div class="rgba"></div>
+                <img
+                    class="backg"
+                    src="https://mason369.github.io/Cai-Xukun-invites-you-to-make-a-video-call/img/background.jpg"
+                    alt=""
+                />
+                <div class="callingbackground">
+                    <div class="calling">
+                        <div class="imgbackground">
+                            <img
+                                class="headimg"
+                                src="https://mason369.github.io/Cai-Xukun-invites-you-to-make-a-video-call/img/cxkcall.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="infor">
+                            <div class="cxk">蔡徐坤</div>
+                            <div class="inviteyou">邀请你打篮球</div>
+                        </div>
+                    </div>
 
-<body>
-  <div class="backgroundmain">
-
-    <div class="background">
-      <div class="blake"></div>
-      <div class="rgba"></div>
-      <img class="backg" src="https://mason369.github.io/Cai-Xukun-invites-you-to-make-a-video-call/img/background.jpg"
-        alt="" />
-      <div class="callingbackground">
-        <div class="calling">
-          <div class="imgbackground">
-            <img class="headimg"
-              src="https://mason369.github.io/Cai-Xukun-invites-you-to-make-a-video-call/img/cxkcall.png" alt="" />
-          </div>
-          <div class="infor">
-            <div class="cxk">蔡徐坤</div>
-            <div class="inviteyou">邀请你打篮球</div>
-          </div>
+                    <div class="points">
+                        <span class="point">.</span>
+                        <span class="point">.</span>
+                        <span class="point">.</span>
+                    </div>
+                    <div class="bonten">
+                        <div class="jujue">
+                            <img
+                                class="imgcall"
+                                src="https://mason369.github.io/Cai-Xukun-invites-you-to-make-a-video-call/img/jujue.png"
+                                alt=""
+                            />
+                            <a
+                                class="reject"
+                                href="https://mason369.github.io/Cai-Xukun-invites-you-to-make-a-video-call/source/reject/reject.html"
+                                >拒绝</a
+                            >
+                        </div>
+                        <div class="jieting">
+                            <img
+                                class="imgcall"
+                                src="https://mason369.github.io/Cai-Xukun-invites-you-to-make-a-video-call/img/jieting.png"
+                                alt=""
+                            />
+                            <a
+                                class="anser"
+                                href="https://mason369.github.io/Cai-Xukun-invites-you-to-make-a-video-call/source/answer/answer.html"
+                                >接听</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="points">
-          <span class="point">.</span>
-          <span class="point">.</span>
-          <span class="point">.</span>
-        </div>
-        <div class="bonten">
-          <div class="jujue">
-            <img class="imgcall"
-              src="https://mason369.github.io/Cai-Xukun-invites-you-to-make-a-video-call/img/jujue.png" alt="">
-            <a class="reject"
-              href="https://mason369.github.io/Cai-Xukun-invites-you-to-make-a-video-call/source/reject/reject.html">拒绝</a>
-          </div>
-          <div class="jieting">
-            <img class="imgcall"
-              src="https://mason369.github.io/Cai-Xukun-invites-you-to-make-a-video-call/img/jieting.png" alt="">
-            <a class="anser"
-              href="https://mason369.github.io/Cai-Xukun-invites-you-to-make-a-video-call/source/answer/answer.html">接听</a>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</body>
-
+    </body>
 </html>
